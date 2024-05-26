@@ -1,0 +1,27 @@
+.GlowButtonLogin{
+    height: 6vh;
+    width: 100%;
+    padding: 2%;
+    background-color: #0200242a;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+
+.GlowButtonLogin:hover {
+    color: black;/*SCRITTA*/
+    background: rgba(242, 181, 15,1);  /*bottone ATTIVO*/
+    box-shadow: 0 0px 40px rgba(242, 181, 15, 1);/*bottone ATTIVO ALONE*/
+    border: 5px solid;
+    border-color: rgb(255, 216, 110); /* new - colore bordo */
+    transition: all 0.3s
+}
+
+
