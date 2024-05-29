@@ -31,6 +31,21 @@ html {
   color: white;
 }
 
+.RegisterBox{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  background-color: #02002481;
+  border: solid 1px black;
+  margin: auto;
+  margin-top: 15%;
+  flex-direction: column;
+  height: auto;
+  padding: 3vh;
+  border-radius: 15px;
+  color: white;
+}
+
 .LoginBox__title {
   font-size: 4rem;
   font-weight: 600;
@@ -117,9 +132,31 @@ animation:typeMsg 3s steps(31, end),
     height: 7vh;
 }
 
+.Regs{
+  display: flex;
+  margin: auto;
+  width: 45%;
+  font-size: 0.7rem;
+  justify-content: center;
+}
 
+.Registro{
+  color: white;
+  text-decoration: underline;
+}
 
+.Registro:hover{
+  color: rgba(242, 181, 15,1);
+  cursor: pointer;
+}
 
+.hide{
+  display: none;
+}
+
+.show{
+  display: flex;
+}
 
 
 /* ********************Animaciones******************** */

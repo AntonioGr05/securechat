@@ -8,3 +8,11 @@
   font-weight: 500;
   font-style: normal;
 }
+
+.errorInput{
+  font-size: 0.7rem;
+  margin: -2% auto 1% auto;
+  color: red;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

@@ -9,7 +9,7 @@
     transition: all 0.3s;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 25px;
     color: white;
     border: none;
