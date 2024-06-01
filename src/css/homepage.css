@@ -241,3 +241,158 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+
+/* Media Queries */
+
+/* Tablets y dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .sideBar {
+        width: 40%;
+    }
+
+    .sideBar__nav {
+        width: 30%;
+        padding: 10% 1% 1% 1%;
+    }
+
+    .nav {
+        height: 40%;
+    }
+
+    .conversation img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .conversation_data h2 {
+        font-size: 0.9rem;
+    }
+
+    .conversation_data p {
+        font-size: 0.7rem;
+        max-width: 150px;
+    }
+
+    .searchMessages {
+        font-size: small;
+    }
+
+    .bienvenida h1 {
+        font-size: 2.5rem;
+    }
+
+    .bienvenida p {
+        font-size: 1.2rem;
+    }
+
+    .main {
+        width: 60%;
+    }
+}
+
+/* Dispositivos móviles con ancho máximo de 480px */
+@media (max-width: 480px) {
+    .sideBar {
+        width: 50%;
+    }
+
+    .sideBar__nav {
+        width: 40%;
+        padding: 5% 1% 1% 1%;
+    }
+
+    .nav {
+        height: 30%;
+    }
+
+    .conversation {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .conversation img {
+        width: 40%;
+        height: 40%;
+        margin-bottom: 2%;
+    }
+
+    .conversation_data h2 {
+        font-size: 0.8rem;
+    }
+
+    .conversation_data p {
+        font-size: 0.6rem;
+        max-width: 100px;
+    }
+
+    .searchMessages {
+        font-size: x-small;
+    }
+
+    .bienvenida h1 {
+        font-size: 2rem;
+    }
+
+    .bienvenida p {
+        font-size: 1rem;
+    }
+
+    .main {
+        width: 50%;
+    }
+}
+
+/* Pantallas muy pequeñas con ancho máximo de 320px */
+@media (max-width: 320px) {
+    .sideBar {
+        width: 60%;
+    }
+
+    .sideBar__nav {
+        width: 50%;
+        padding: 2% 1% 1% 1%;
+    }
+
+    .nav {
+        height: 25%;
+    }
+
+    .conversation {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .conversation img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 5%;
+    }
+
+    .conversation_data h2 {
+        font-size: 0.7rem;
+    }
+
+    .conversation_data p {
+        font-size: 0.5rem;
+        max-width: 80px;
+    }
+
+    .searchMessages {
+        font-size: xx-small;
+    }
+
+    .bienvenida h1 {
+        font-size: 1.5rem;
+    }
+
+    .bienvenida p {
+        font-size: 0.8rem;
+    }
+
+    .main {
+        width: 40%;
+    }
+}

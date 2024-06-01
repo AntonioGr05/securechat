@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 html {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
   background: linear-gradient(305deg,#020024,#6805ba,#250339);
   background-size: 180% 180%;
     animation: gradient-Login 15s ease infinite;
@@ -181,4 +185,139 @@ to{width:100%;}
 @keyframes cursorAnim{
 from{border-right-color:#000;}
 to{border-right-color:transparent;}
+}
+
+
+/* Media Queries */
+
+/* Tablets y dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+  .LoginBox, .RegisterBox {
+    width: 70%;
+  }
+
+  .LoginBox__title {
+    font-size: 3rem;
+  }
+
+  .form__inputs {
+    width: 80%;
+  }
+
+  .LoginBox__button {
+    width: 40%;
+  }
+
+  .LoginBox_othersmethods, .Regs {
+    width: 70%;
+  }
+
+  .message h1 {
+    font-size: 0.8rem;
+  
+  }
+
+}
+
+/* Dispositivos móviles con ancho máximo de 480px */
+@media (max-width: 480px) {
+  .LoginBox, .RegisterBox {
+    width: 90%;
+    margin-top: 20%;
+  }
+
+  .LoginBox__title {
+    font-size: 2rem;
+  }
+
+  .form__inputs {
+    width: 90%;
+  }
+
+  .LoginBox__button {
+    width: 50%;
+  }
+
+  .LoginBox_othersmethods, .Regs {
+    width: 90%;
+    font-size: 0.6rem;
+  }
+
+  .Registro {
+    font-size: 0.8rem;
+  }
+
+  .message h1{
+    font-size: 0.5rem;
+  
+  }
+
+}
+
+/* Pantallas muy pequeñas con ancho máximo de 320px */
+@media (max-width: 320px) {
+  .LoginBox, .RegisterBox {
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  .LoginBox__title {
+    font-size: 1.5rem;
+  }
+
+  .form__inputs {
+    width: 95%;
+  }
+
+  .LoginBox__button {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+
+  .LoginBox_othersmethods, .Regs {
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .Registro {
+    font-size: 0.7rem;
+  }
+
+  .message h1{
+    font-size: 0.2rem;
+  
+  }
+
+}
+
+/* Animaciones */
+
+@keyframes gradient-Login {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typeMsg {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursorAnim {
+  from {
+    border-right-color: #000;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }

@@ -4,11 +4,10 @@ import '../index.css';
 import '../css/login.css';
 import {auth} from '../firebase'
 import OTHMETHODSBTT from '../components/othmethodsbtt';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { 
     createUserWithEmailAndPassword, 
-    signInWithEmailAndPassword,
-    onAuthStateChanged}
+    signInWithEmailAndPassword,}
 from 'firebase/auth';
 
 export default function Login() {
@@ -81,15 +80,12 @@ export default function Login() {
         }
     }
 
-    
-
   return (
     <section className='container'>
         <div className='LoginBox'>
             <h1 className='LoginBox__title'>SecureChat</h1>
             <div className="cursor message">
                 <h1>The Messaging is security-focused to protect our clients' data.</h1>
-                
             </div>
             <div>
             </div>
