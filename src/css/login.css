@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 html {
-    
+  background: linear-gradient(305deg,#020024,#6805ba,#250339);
+  background-size: 180% 180%;
+    animation: gradient-Login 15s ease infinite;
+  height: 100%;
 }
 
 .container {
@@ -11,9 +14,6 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(305deg,#020024,#6805ba,#250339);
-    background-size: 180% 180%;
-  animation: gradient-Login 15s ease infinite;
 }
 
 .LoginBox {

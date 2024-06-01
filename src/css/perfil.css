@@ -1,0 +1,29 @@
+.container {
+    background: none;
+    background-color: none;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.perfil {
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.perfil__header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+}

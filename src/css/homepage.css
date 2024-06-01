@@ -1,4 +1,243 @@
-.container{
+.Container{
     background: none;
     background-color: none;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    overflow: hidden;
+}
+.sideBar{
+    background-color:  #161616;
+    width: 27%;
+    height: 100%;
+    float: left;
+    display: flex;
+    /* position: fixed; */
+    /* z-index: 1; */
+    overflow-x: hidden;
+    padding: 0% 0% 0% 0;
+}
+
+.tituloM{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.sideBar__nav{
+    float: left;
+    height: 100%;
+    width: 20%;
+    padding: 15% 1% 1% 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: auto;
+    align-content: center;
+    margin: 0 auto;
+    margin: auto
+}
+
+.nav li {
+    width: 80%;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav img{
+    margin: auto;
+    width: 100%;
+}
+
+.sideBar__right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2% 2% 2%;
+}
+
+.sideBar__header{
+    margin-bottom: 2%;
+}
+
+.searchMessages{
+    width: 100%;
+    height: 6vh;
+}
+
+.searchContainer {
+    position: relative;
+    width: 100%;
+}
+
+.searchMessages {
+    width: 100%;
+    height: 5vh;
+    padding-right: 30px; 
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: medium;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.sideBar__conversations{
+    height: 100%; /* Asegúrate de que el contenedor tenga una altura establecida */
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.conversation{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-bottom: 2%;
+    color: white;
+    background-color: #232323;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.conversation img {
+    width: 20%;
+    margin-right: 2%;
+    border-radius: 50%;
+    height: 20%;
+    max-height: 20%;
+}
+
+.conversation_data{
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation_data h2{
+    margin: 0;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%; 
+}
+
+.conversation_data p{
+    margin: 0;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; 
+}
+
+.sideBar_stories{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: unset;
+    white-space: none;
+    scrollbar-width: none;
+    width: 100%;
+    height: 8vh;
+}
+
+.story{
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+    border-radius: 50%;
+
+}
+
+.story img{
+    width: 100%;
+    border-radius: 50%;
+    border: solid 2px #c400f5;
+    cursor: pointer;
+}
+
+.mainHeader{
+    border: solid 1px white;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.DatosMessage{
+    border: solid 1px white;
+    height: 100%;
+    display: flex;
+    width: 20vh;
+}
+
+.DatosMessage img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bienvenida h1{
+    margin: 0;
+    font-size: 3rem;
+    font-family: "Russo One", sans-serif;
+}
+
+.bienvenida p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Russo One", sans-serif;
+}
+
+.main{
+    width: 75%;
+}
+
+.liopc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liopc:hover{
+    background-color: #6805BA;
+    border-radius: 50%;
+    width: 5vh;
+    border: color 5px #a73bff;
+    box-shadow: #6805BA 0px 0px 2px 10px;
+}
+
+.ph{
+    font-size: 1rem;
+    font-weight: bold;
 }

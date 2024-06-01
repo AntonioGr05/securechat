@@ -4,12 +4,11 @@ import '../index.css';
 import '../css/login.css';
 import {auth} from '../firebase'
 import OTHMETHODSBTT from '../components/othmethodsbtt';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { 
     createUserWithEmailAndPassword, 
-    signInWithEmailAndPassword, 
-    GoogleAuthProvider,
-    signInWithPopup} 
+    signInWithEmailAndPassword,
+    onAuthStateChanged}
 from 'firebase/auth';
 
 export default function Login() {
@@ -82,23 +81,7 @@ export default function Login() {
         }
     }
 
-    // datos de prueba para provar el inicio de sesion
-    // email: user1@gmail
-    // password: 12345678
-
-    const datos = {
-        email: 'user1@gmail',
-        password: '12345678'
-    }
-
-    const handleLogin = () => {
-        if (email === datos.email && password === datos.password) {
-            console.log('Inicio de sesion exitoso');
-        } else {
-            console.log('Inicio de sesion fallido');
-        }
-    }
-
+    
 
   return (
     <section className='container'>

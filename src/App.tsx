@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
+import Perfil from './pages/Perfil';
 import {auth} from './firebase'
 
 const App: React.FC = () => {
@@ -20,11 +21,15 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         {isLoggedIn ? (
-          <Route path="/" element={<HomePage />} />
+          <>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/perfil" element={<Perfil />} />
+          </>
         ) : (
           <Route path="/Login" element={<Login />} />
         )}
         <Route path="*" element={<Navigate to={isLoggedIn ? "/" : "/Login"} />} />
+        {/* ruta para perfil */}
       </Routes>
     </Router>
   );
