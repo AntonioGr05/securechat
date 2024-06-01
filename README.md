@@ -158,3 +158,43 @@ Prueba que verifica que el componente se renderiza correctamente: se renderiza e
 Prueba que verifica que se llama a signOut cuando se hace clic en el botón de cierre de sesión: se renderiza el componente Perfil dentro de un MemoryRouter, se obtiene el botón de cierre de sesión y se simula un evento de clic en él. Se verifica que la función signOut ha sido llamada.
 
 Antes de cada prueba, se ejecuta vi.clearAllMocks() para asegurar que se reinicien todos los mocks y no interfieran entre ellas.
+
+# Componente Perfil
+
+Este componente se utiliza para mostrar la información del perfil del usuario actualmente autenticado.
+
+## Importaciones
+
+- `firebase`: Se utiliza para interactuar con Firebase.
+- `../css/perfil.css`: Los estilos para este componente.
+- `{ auth } from '../firebase'`: La instancia de autenticación de Firebase.
+- `{ useEffect, useState } from 'react'`: Hooks de React para manejar el estado y los efectos secundarios.
+- `{ Link } from 'react-router-dom'`: Componente de React Router para la navegación.
+- `{ User } from 'firebase/auth'`: Tipo de usuario de Firebase.
+- `{ signOut } from 'firebase/auth'`: Función para cerrar la sesión del usuario.
+
+## Estado
+
+- `currentUser`: Este estado almacena el usuario actualmente autenticado.
+
+## Funciones
+
+- `logout`: Esta función se utiliza para cerrar la sesión del usuario.
+
+## Efectos secundarios
+
+- Un efecto secundario se utiliza para establecer el usuario actualmente autenticado cuando el componente se monta.
+
+## Renderizado
+
+El componente renderiza una sección que contiene la información del perfil del usuario, incluyendo:
+
+- Un enlace para regresar a la página anterior.
+- Una imagen de perfil.
+- El nombre de usuario o correo electrónico.
+- El correo electrónico del usuario.
+- El número de teléfono del usuario.
+- Los proveedores de autenticación del usuario.
+- La fecha de creación de la cuenta del usuario.
+- La última vez que el usuario inició sesión.
+- Un botón para cerrar la sesión.
