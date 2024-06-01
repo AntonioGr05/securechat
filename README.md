@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">SecureChat</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/AntonioGr05/securechat/image?description=1&amp;descriptionEditable=Proyecto%20de%20especialidad.&amp;font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">Este es un proyecto de especialidad en el cual se elabora una aplicacion de mensajeria enfocandose en brindar las mejores opciones en seguridad en la mensajeria.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 Demo</h2>
 
-## Expanding the ESLint configuration
+[securechat-dusky.vercel.app](securechat-dusky.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2>Project Screenshots:</h2>
 
-- Configure the top-level `parserOptions` property like this:
+<img src="https://i.ibb.co/pZ9pgg4/Captura-de-pantalla-2024-06-01-a-la-s-12-17-16-a-m.png" alt="project-screenshot" width="1000" height="500/">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<img src="https://i.ibb.co/KrKzR1C/Captura-de-pantalla-2024-06-01-a-la-s-12-17-38-a-m.png" alt="project-screenshot" width="1000" height="500/">
+
+<img src="https://i.ibb.co/FgDQgZZ/Captura-de-pantalla-2024-06-01-a-la-s-12-18-12-a-m.png" alt="project-screenshot" width="1000" height="500/">
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Firebase
+*   vitetest
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clonar el Repositorio</p>
+
+```
+git clone https://github.com/AntonioGr05/securechat
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<p>2. Instalar dependencias</p>
+
+```
+npm install
+```
+
+<p>3. Iniciar la aplicacion</p>
+
+```
+npm run dev
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Firebsae
+*   GoogleAuth
+*   react
+*   vite
